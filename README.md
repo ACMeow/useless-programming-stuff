@@ -2,27 +2,39 @@
 
 其实只是想写一点看起来有点用的东西，回头再整理罢。
 
-# 如何使用codeblocks
+## 如何使用codeblocks
 
 请参考群文件《codeblocks简单操作.pdf》 by 凯妹。
 
-# 代码风格
+## 代码风格
 
 众所周知，良好的代码风格不仅可以使代码赏心悦目，还可以让代码更易读，减少bug数量~~的同时也可以减少学长帮忙看代码时的怒气值~~，故养成良好的代码风格甚至养成和同行人相同的代码风格是学习编程的重要一环。在养成自己的代码风格之前，我们可以考虑使用一些格式化工具帮助我们将代码整理成目前比较流行的代码风格。
 
-## [Artistic Style](http://astyle.sourceforge.net/astyle.html)
+### [Artistic Style](http://astyle.sourceforge.net/astyle.html)
 
 标题链接就是这个工具的文档。支持多种目前比较流行的代码风格：gnu/linux/ansi/google等。Codeblocks内置了该工具，只需要在右键菜单选择格式化即可。详情参考群文件《codeblocks简单操作.pdf》 by 凯妹。
 
-## [CppLint](https://github.com/google/styleguide/tree/gh-pages/cpplint)
+### [CppLint](https://github.com/google/styleguide/tree/gh-pages/cpplint)
 
 夹带私货，这是我目前拄的拐杖的开源版本，不仅检查缩进，还会检查各种变量命名和使用，参数传递，类型转换，const之类的细节（虽然不知道开源了多少）。只支持Google代码风格~~简单来说就是两空格的异端~~。
 
-## 大佬们补充一下
+### 大佬们补充一下
 
-# 如何提问
+## 如何使用OJ
+
+TODO: 群文件好像有？我回头找找
+
+## 如何Debug
+
+### 如何找到bug
+
+### 如何解决bug
+
+## 如何提问
 
 在向学长提问时，你需要准备以下内容：
+
+0. 请先试着[自己debug](#如何Debug)
 
 1. **题面**：最好是题目链接，在大家达成共识的情况下可以使用题号（例：这周的作业C题），实在找不到题目再口述题目大意（特别是某些容易读错题的同学）。
 
@@ -37,4 +49,4 @@
 
     1. 程序能够执行，结果不符合预期：运行结果应该包含三个部分：**输入数据**：单独提供，**期望输出**：单独提供，**实际输出**：通过对运行窗口截图来提供。如果是题目自身提供的样例，只需要指明输入和期望输出是哪一组即可。
 
-    1. 程序能够执行，结果符合预期，OJ返回WrongAnswer：TODO
+    1. 程序能够执行，结果符合预期，OJ返回WrongAnswer：
