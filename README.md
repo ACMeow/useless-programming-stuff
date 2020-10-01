@@ -12,7 +12,7 @@
 
 ### [Artistic Style](http://astyle.sourceforge.net/astyle.html)
 
-标题链接就是这个工具的文档。支持多种目前比较流行的代码风格：gnu/linux/ansi/google等。Codeblocks内置了该工具，只需要在右键菜单选择格式化即可。详情参考群文件《codeblocks简单操作.pdf》 by 凯妹。
+标题链接就是这个工具的文档。支持多种目前比较流行的代码风格：gnu/linux/ansi/google等。**Codeblocks内置了该工具**，只需要在右键菜单选择格式化即可。详情参考群文件《codeblocks简单操作.pdf》 by 凯妹。
 
 ### [CppLint](https://github.com/google/styleguide/tree/gh-pages/cpplint)
 
@@ -26,7 +26,7 @@ TODO: 群文件好像有？我回头找找。
 
 ## 如何查字典
 
-把你们手里的语法书扔掉，来尝试一下宇宙最强的[CppReference](https://en.cppreference.com/w/)。 这个网站收录了非常全面的C语言和C++标准文档，右上角的搜索键可以解决你对一切关键字和一切标准库的疑问（记得选C那边的结果）。悄悄地说其实这个网站支持中文，在页面最底下找找。
+把你们手里的语法书扔掉，来尝试一下**宇宙最强的[CppReference](https://en.cppreference.com/w/)**。 这个网站收录了非常全面的C语言和C++标准文档，右上角的搜索键可以解决你对一切关键字和一切标准库的疑问（记得选C那边的结果）。悄悄地说其实这个网站支持中文，在页面最底下找找。
 
 ## 如何Debug
 
@@ -98,6 +98,8 @@ gcc 2.c -o 2 -O2
 gcc 3.c -o 3 -O2
 for /l %%i in (1, 1, 100) do (1 > 1.in && 2 < 1.in > 2.out && 3 < 1.in > 3.out && fc 2.out 3.out || pause)
 ```
+
+双击运行4.bat，它会在找到不同或者运行满100次之后停下来。
 
 ## 如何提问
 
