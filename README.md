@@ -14,6 +14,10 @@
 
 标题链接就是这个工具的文档。支持多种目前比较流行的代码风格：gnu/linux/ansi/google等。**Codeblocks内置了该工具**，只需要在右键菜单选择格式化即可。详情参考群文件《codeblocks简单操作.pdf》 by 凯妹。
 
+### [CppCheck](http://cppcheck.sourceforge.net/)
+
+群友推荐的工具，我没用过，看文档感觉功能很强，而且自称**Codeblocks内置了该工具**。有codeblocks的同学在这补一个教程蟹蟹。
+
 ### [CppLint](https://github.com/google/styleguide/tree/gh-pages/cpplint)
 
 夹带私货，这是我目前拄的拐杖的开源版本，不仅检查缩进，还会检查各种变量命名和使用，参数传递，类型转换，const之类的细节（虽然不知道开源了多少）。只支持Google代码风格~~简单来说就是两空格的异端~~。
