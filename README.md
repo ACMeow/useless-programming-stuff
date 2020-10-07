@@ -64,7 +64,7 @@ TODO: 群文件好像有？我回头找找。
 
 1. Wrong Answer：程序在某一组数据上和标准答案不一致。[如何Debug？](#如何Debug)
 
-1. Output Limit Exceed：输出长度超限，通常远超过标准答案的长度。由于标准答案长度显然不超限，该错误类型也属于Wrong Answer的一种。部分OJ不提供该错误类型，直接提供Wrong Answer。
+1. Output Limit Exceed：输出长度超限，通常远超过标准答案的长度。由于标准答案长度显然不超限，该错误类型也属于Wrong Answer的一种。部分OJ不提供该错误类型，直接提供Wrong Answer。常见原因为程序无法正常停止。
 
 ### Presentation Error
 
