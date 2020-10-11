@@ -16,7 +16,7 @@ Ctrl+Shift+N新建文件，Ctrl+S保存，保存的文件后缀名应为```.c```
 
 ### [Artistic Style](http://astyle.sourceforge.net/astyle.html)
 
-标题链接就是这个工具的文档。支持多种目前比较流行的代码风格：gnu/linux/ansi/google等。**Codeblocks内置了该工具**，只需要在右键菜单选择格式化即可。详情参考群文件《codeblocks简单操作.pdf》 by 凯妹。
+标题链接就是这个工具的文档。支持多种目前比较流行的代码风格：gnu/linux/ansi/google等。**Codeblocks内置了该工具**，只需要在右键菜单选择格式化即可。详情参考群文件《codeblocks简单操作.pdf》 by 凯妹。 
 
 ### [CppCheck](http://cppcheck.sourceforge.net/)
 
