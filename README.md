@@ -4,11 +4,11 @@ TODO：来点表情包。
 
 ## 如何使用codeblocks
 
-Ctrl+Shift+N新建文件，Ctrl+S保存，保存的文件后缀名应为```.c```，F9编译并运行当前文件。
+Ctrl+Shift+N新建文件，Ctrl+S保存，保存的文件后缀名应为`.c`，F9编译并运行当前文件。
 
 请参考群文件《codeblocks简单操作.pdf》 by 凯妹。
 
-建议在设置的编译选项里加入```-Wall -Werror```以显示所有的编译器警告，可以避免一部分变量未初始化，if中使用=等常见错误。
+建议在设置的编译选项里加入`-Wall -Werror`以显示所有的编译器警告，可以避免一部分变量未初始化，if中使用=等常见错误。
 
 ## 代码风格
 
@@ -50,7 +50,7 @@ TODO: 群文件好像有？我回头找找。
 
 1. Memory Limit Exceeded：程序运行时使用的内存超过限制，请改进算法。
 
-1. Runtime Error: 运行时错误（包括本地运行时程序崩溃，显示```Process terminated with status 某个反正不是0的数字```的现象），通常有以下几种原因：
+1. Runtime Error: 运行时错误（包括本地运行时程序崩溃，显示`Process terminated with status 某个反正不是0的数字`的现象），通常有以下几种原因：
 
     - 访问无效内存：数组越界，使用未初始化或已经释放的指针，将变量的值当做指针传递给函数参数（特别是scanf）等。
 
@@ -78,11 +78,20 @@ TODO: 群文件好像有？我回头找找。
 
 1. 首先，由于本地直接运行时输入流、输出流和错误流（[stdin, stdout, stderr][字典]）混在一起，很难分辨出输出中缺失的空格、回车等符号，故先使用[freopen][字典]将输入，输出流和错误流重定向。在main函数开头添加如下代码：
 
-```c
-  freopen("in.txt", "r", stdin);
-  freopen("out.txt", "w", stdout);
-  freopen("err.txt", "w", stderr);
-```
+   ```c
+     freopen("in.txt", "r", stdin);
+     freopen("out.txt", "w", stdout);
+     freopen("err.txt", "w", stderr);
+   ```
+
+   分别将输入流重定向到`in.txt`，输出流重定向到`out.txt`，错误流重定向到`err.txt`；
+
+1. 在[源文件所在的目录](http://baidu.com/s?wd=windows%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F)下，新建一个文本文档，命名为`in.txt`。将样例输入完整的复制到其中，保存；
+
+1. 在源文件所在的目录下，新建一个文本文档，命名为`ans.txt`。将样例输出完整的复制到其中，保存；
+
+1. 在本地运行你的程序；
+
 
 ## 如何Debug
 
@@ -133,7 +142,7 @@ for /l %%i in (1, 1, 100) do (1 > 1.in && 2 < 1.in > 2.out && 3 < 1.in > 3.out &
 
 在每次逻辑跳转([if, switch, 函数等][字典])之前和之后，打印一个标记，用来跟踪程序的执行流程，例如：
 
-```
+```c
 printf("==> IF 1: %d, %d, %d\n", a, b, c);
 if (a + b < c) {
   printf("====> THEN 1\n");
@@ -146,7 +155,7 @@ if (a + b < c) {
 
 在每行语句执行完之后，加一行printf，将这行语句涉及到的所有变量的值打出来，以跟踪变量的变化，例如：
 
-```
+```c
 a = b + c;
 printf("--> a = b + c: a: %d, b: %d, c: %d\n", a, b, c);
 ```
