@@ -16,7 +16,7 @@ Ctrl+Shift+N新建文件，Ctrl+S保存，保存的文件后缀名应为```.c```
 
 ### [Artistic Style](http://astyle.sourceforge.net/astyle.html)
 
-标题链接就是这个工具的文档。支持多种目前比较流行的代码风格：gnu/linux/ansi/google等。**Codeblocks内置了该工具**，只需要在右键菜单选择格式化即可。详情参考群文件《codeblocks简单操作.pdf》 by 凯妹。 
+标题链接就是这个工具的文档。支持多种目前比较流行的代码风格：gnu/linux/ansi/google等。**Codeblocks内置了该工具，只需要在右键菜单选择格式化（Format）即可**。详情参考群文件《codeblocks简单操作.pdf》 by 凯妹。
 
 ### [CppCheck](http://cppcheck.sourceforge.net/)
 
@@ -72,6 +72,18 @@ TODO: 群文件好像有？我回头找找。
 
 格式错误。通常可以理解为，程序的输出和标准输出不一致，但去掉所有缩进（空格，回车，tab等）之后和标准答案一致。此时请重新读题，仔细检查题目要求的输出格式。
 
+## 如何治疗失明
+
+众所周知由于网页字体难看，中英文符号相似等原因，肉眼经常无法分辨期望输出和实际输出之间的微小差异，可采用如下方法解决：
+
+1. 首先，由于本地直接运行时输入流、输出流和错误流（[stdin, stdout, stderr][字典]）混在一起，很难分辨出输出中缺失的空格、回车等符号，故先使用[freopen][字典]将输入，输出流和错误流重定向。在main函数开头添加如下代码：
+
+```c
+  freopen("in.txt", "r", stdin);
+  freopen("out.txt", "w", stdout);
+  freopen("err.txt", "w", stderr);
+```
+
 ## 如何Debug
 
 此处只讨论RuntimeError和WrongAnswer两种情况。
@@ -104,7 +116,7 @@ TODO: 群文件好像有？我回头找找。
 
 1. （可选）一个调用1产生输入数据，调用2和3产生输出并对比的脚本 4.bat，内容如下（windows系统下）：
 
-```
+```bat
 gcc 1.c -o 1 -O2
 gcc 2.c -o 2 -O2
 gcc 3.c -o 3 -O2
@@ -164,8 +176,6 @@ TODO：大佬来个gdb教学
 
     1. 程序能够执行，结果符合预期，OJ返回WrongAnswer：请**先**试着[自己找debug](#如何找到bug)。如果能找到，参考上一条；否则不用提供运行结果。
 
-[字典]: #如何查字典
-
 ## 如何截图
 
 我为什么要在面向编程的地方教这个……
@@ -175,3 +185,5 @@ TODO：大佬来个gdb教学
 1. 系统自带的截图工具，键盘右上角的PrintScreen/PrtSc键，不会显示任何信息，会直接将整个屏幕复制到剪贴板。然后直接在聊天窗口粘贴即可。Alt+PrtSc可以只截图当前活动窗口。如果需要截图更细致的范围，请截大图复制到画图工具中进一步处理。
 
 1. Win10自带的游戏截图与录像工具包，快捷键Win+G，可能需要告诉它codeblocks是一款游戏才行。截图/录像的结果会保存在```此电脑>视频>捕获```（或者说```C:\Users\$系统用户名$\Videos\Captures```）目录下。效果：![Win+G](img/win.g.jpg)
+
+[字典]: #如何查字典
